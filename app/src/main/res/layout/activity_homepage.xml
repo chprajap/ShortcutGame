@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.example.bordia98.shortcut.Homepage">
+
+
+    <Button
+        android:id="@+id/playit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/roundbutton"
+        android:text="Play"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="250dp"
+        android:id="@+id/linearLayout7">
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/mus"
+            android:layout_weight="1"
+            android:text="Do You want Music??"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <com.hanks.htextview.rainbow.RainbowTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="38dp"
+        android:textSize="55dp"
+        android:textColor="#570838"
+        android:textStyle="bold"
+        android:text="Short-Cut"
+        app:colorSpace="150dp"
+        app:colorSpeed="4dp"/>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/playit"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_marginTop="31dp"
+        android:text="Help"
+        android:background="@drawable/roundbutton"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+</RelativeLayout>
